@@ -10,5 +10,8 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-source ~/conf/zsh_config/.pj/enable/*.zshrc
+for file in `\find $HOME/conf/zsh_config/.pj/enable -name '*.zshrc'`; do
+	echo "source $file"
+	source $file
+done
 
