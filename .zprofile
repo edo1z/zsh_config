@@ -66,6 +66,10 @@ fi
 # Go
 #
 export PATH=$PATH:/usr/local/go/bin
-export GOROOT=$HOME/go
-export PATH=$PATH:$GOROOT/bin
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
 
+#
+# Yarn
+#
+export PATH="$PATH:`yarn global bin`"

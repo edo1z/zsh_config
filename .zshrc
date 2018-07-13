@@ -15,3 +15,5 @@ for file in `\find $HOME/conf/zsh_config/.pj/enable -name '*.zshrc'`; do
 	source $file
 done
 
+alias l="ls -l"
+
